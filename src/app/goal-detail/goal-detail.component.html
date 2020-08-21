@@ -1,0 +1,9 @@
+<p>{{ goal.description }}</p>
+<p>This goal will be complete in {{ goal.completeDate|dateCount }} days.</p>
+<!--event emitter-->
+<!-- <button (click)='goalComplete(true)'>Goal Complete!</button> -->
+
+
+<!-- we now delete goals by modifying the button we had above-->
+<!--We have modified the button to emit a click output event that calls the goalDelete() function which takes a boolean as an argument-->
+<button (click)='goalDelete(true)' class="btn btn-outline-danger">Delete Goal!</button>
